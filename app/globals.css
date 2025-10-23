@@ -8,8 +8,18 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand:#ef6c2d;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+@layer components {
+  .navigation { @apply flex  justify-between
+    items-center p-4 }
+  .navigation-link { @apply flex gap-8 justify-center
+    items-center font-bold  p-4 ; }
+    .primary-btn{
+      @apply px-4 py-2 mr-4 bg-[#ef6c2d] text-white rounded-[8px]
+    }
 }
 
 @media (prefers-color-scheme: dark) {
