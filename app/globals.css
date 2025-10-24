@@ -20,6 +20,13 @@
     .primary-btn{
       @apply px-4 py-2 mr-4 bg-[#ef6c2d] text-white rounded-[8px]
     }
+    .hero{
+      @apply flex items-center justify-between p-8;
+    }
+    .herotext{
+      @apply flex flex-col gap-4 justify-start items-start;
+    }
+    
 }
 
 @media (prefers-color-scheme: dark) {
