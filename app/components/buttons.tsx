@@ -7,7 +7,7 @@ function PrimaryBtn({ children }: ButtonProps) {
 }
 
 function SecondaryBtn({ children }: ButtonProps) {
-  return <button>{children}</button>;
+  return <button className="second-btn">{children}</button>;
 }
 
 export { PrimaryBtn, SecondaryBtn };

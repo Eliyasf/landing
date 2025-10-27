@@ -18,14 +18,19 @@
   .navigation-link { @apply flex gap-8 justify-center
     items-center font-bold  p-4 ; }
     .primary-btn{
-      @apply px-4 py-2 mr-4 bg-[#ef6c2d] text-white rounded-[8px]
+      @apply px-4 py-2 mr-4 bg-[#ef6c2d] text-white rounded-[8px];
     }
+   .second-btn {
+  @apply px-4 py-2 mr-4 border-1 border-orange-600 text-orange-600 rounded-[8px];
+}
+
     .hero{
       @apply flex items-center justify-between p-8;
     }
     .herotext{
       @apply flex flex-col gap-4 justify-start items-start;
     }
+   
     
 }
 
