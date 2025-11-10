@@ -1,8 +1,9 @@
 import Image from "next/image";
-import list from"./list.module.css";
-import { PrimaryBtn , SecondaryBtn} from "../components/buttons";
+import list from "./list.module.css";
+import { PrimaryBtn, SecondaryBtn } from "../components/buttons";
 
 export default function Solution() {
+  const solution = ["Contact us", "Consult", "Place order", "Payment"];
   return (
     <section className="flex gap-[115px] justify-center items-center bg-[#ef6a2d5e] h-[400px] p-4">
       <Image
@@ -19,15 +20,16 @@ export default function Solution() {
         </p>
 
         <ol type="1" className={list.list}>
-          <li className={list.listItem}>Contact us</li>
-          <li className={list.listItem}>Consult</li>
-          <li className={list.listItem}>Place order</li>
-          <li className={list.listItem}>Payment</li>
+          {solution.map((item, index) => (
+            <li className={list.listItem} key={index}>
+              {item}
+            </li>
+          ))}
         </ol>
-<div>
-<PrimaryBtn>Get Started</PrimaryBtn>
-<SecondaryBtn>Read more</SecondaryBtn>
-</div>
+        <div>
+          <PrimaryBtn>Get Started</PrimaryBtn>
+          <SecondaryBtn>Read more</SecondaryBtn>
+        </div>
       </div>
     </section>
   );

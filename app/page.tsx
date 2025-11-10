@@ -3,6 +3,7 @@ import Navigation from "./components/navigation";
 import Hero from "./section/hero_section";
 import Service from "./section/service_section";
 import Solution from "./section/solution_section";
+import Testimonials from "./components/testimonial";
 export default function Home() {
   return (
   <>
@@ -14,6 +15,7 @@ export default function Home() {
   <main>
     <Service />
     <Solution/>
+    <Testimonials/>
   </main>
   
   </>
