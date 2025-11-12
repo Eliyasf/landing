@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PrimaryBtn } from "./buttons";
+import NavLink from "./navlink";
 
 export default function Navigation(){
     return(
@@ -10,10 +11,10 @@ export default function Navigation(){
         <h1 className="text-brand font-bold">Logo</h1>
 
             <ul className="list-none navigation-link">
-        <li><Link href='./'>Home</Link></li>
-        <li><Link href='/about'>About</Link></li>
-        <li><Link href='/sevice'>Service</Link></li>
-        <li><Link href='/contact'>Contact Us</Link></li>
+        <li><NavLink href="/">Home</NavLink></li>
+        <li><NavLink href="/About">About</NavLink></li>
+        <li><NavLink href="/Service">Service</NavLink></li>
+        <li><NavLink href="/ContactUs">Contact Us</NavLink></li>
             </ul>
         
           <PrimaryBtn> 
